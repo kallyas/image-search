@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/kallyas/image-search/issues"
   },
-  "homepage": "https://github.com/kallyas/image-search#readme",
+  "homepage": "https://kallyas.github.io/image-search/",
   "dependencies": {
     "dotenv": "^8.2.0"
   }
