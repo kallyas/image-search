@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>🍦 JS Image Search</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
-    />
-    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-  </head>
-  <body>
-    <h1>🍦 JS Image Search</h1>
-    <form>
-      <label for="searchTerm">Search Term</label>
-      <input
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>🍦 JS Image Search</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+	<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+</head>
+
+<body>
+	<h1>🍦 JS Image Search</h1>
+	<form>
+		<label for="searchTerm">Search Term</label>
+		<input
         class="u-full-width"
         type="text"
         id="searchTerm"
         name="searchTerm"
       />
-      <button type="submit">Search</button>
-    </form>
-    <img id="loadingImage" src="https://i.imgur.com/LVHmLnb.gif" />
-    <section class="images"></section>
-    <script src="app.js"></script>
-  </body>
+		<button type="submit">Search</button>
+	</form>
+	<img id="loadingImage" src="https://i.imgur.com/LVHmLnb.gif" />
+	<section class="images"></section>
+	<script src="./js/app.js"></script>
+</body>
+
 </html>
