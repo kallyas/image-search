@@ -17,7 +17,7 @@ function formSubmitted(event) {
   
   searchStart();
   search(searchTerm)
-    .then(displayImages)
+    .then(data => displayImages(data))
     .then(() => {
       loadingImage.style.display = 'none';
     });
