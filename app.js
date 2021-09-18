@@ -1,8 +1,6 @@
 // require("dotenv").config();
 
-const API_URL = `https://pixabay.com/api`;
-const API_KEY = `17631253-060c608ba0a8d5a2779c2e3dc`;
-const BASE_URL = `${API_URL}/?key=${API_KEY}&q=`;
+const API_URL = `https://pixabay.com/api/?key=17631253-060c608ba0a8d5a2779c2e3dc&q=`;
 
 const form = document.querySelector('form');
 const input = document.querySelector('input');
@@ -31,8 +29,8 @@ function searchStart() {
 }
 
 function search(searchTerm) {
-  const url = `{BASE_URL}${searchTerm}&image_type=photo&pretty=true`;
-  return fetch(url)
+  const apiurl = `${API_URL}${searchTerm}&image_type=photo&pretty=true`;
+  return fetch(apiurl)
     .then(response => response.json())
     .then(result => {
       return result.photos;
