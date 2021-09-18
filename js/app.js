@@ -1,7 +1,7 @@
 // require("dotenv").config();
 
 const API_URL = `https://pixabay.com/api`;
-const API_KEY = process.env.API_KEY;
+const API_KEY = ${{ secrets.API_KEY }};
 const BASE_URL = `${API_URL}/?key=${API_KEY}&q=`;
 
 console.log(API_URL);
